@@ -18,7 +18,8 @@ function App() {
       })
       .then((response) => {
         const blobUrl = window.URL.createObjectURL(new Blob([response.data]));
-        console.log(response.data)
+        console.log(response.data);
+        console.log(blobUrl);
         setDownloadUrl(blobUrl);
         setIsLoading(false);
       })
@@ -36,7 +37,14 @@ function App() {
       document.body.appendChild(link);
       link.click();
       link.parentNode?.removeChild(link);
+      setUrl("");
+      setDownloadUrl(null);
     }
+  }
+
+  function removeUrl() {
+    setUrl("")
+    setDownloadUrl("");
   }
 
   return (
@@ -75,16 +83,28 @@ function App() {
         {isLoading ? (
           <CircularProgress />
         ) : downloadUrl ? (
-          <Button
-            variant="contained"
-            onClick={downloadFile}
-            style={{
-              marginLeft: "20px",
-              background: "#c900ff",
-            }}
-          >
-            Download
-          </Button>
+          <>
+            <Button
+              variant="contained"
+              onClick={downloadFile}
+              style={{
+                marginLeft: "20px",
+                background: "#c900ff",
+              }}
+            >
+              Download
+            </Button>
+            <Button
+              variant="outlined" 
+              color="error"
+              onClick={removeUrl}
+              style={{
+                marginLeft: "20px"
+              }}
+            >
+              Remove Url
+            </Button>
+          </>
         ) : (
           <Button
             variant="contained"

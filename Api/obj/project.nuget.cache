@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "d5ko+lcU7ERZ5r9kCm9VENJ7I4vqfonM96HOFAoj2x4v0fxXYf/YM5znEqFDI9GrQDR7SoHIpiJIIoe4VGaOJQ==",
+  "dgSpecHash": "3DYp9Cs2Kk7hkhN5DoKoGVAqGWaxgMEt+ekFRsFvDSNzEDNz7ct15m5u8yLm3aDkZ5Yh9ljoU6tLFmgEtQqRAQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\youtube-to-mp3\\API\\Api.csproj",
+  "projectFilePath": "C:\\Users\\Razer\\Documents\\GitHub\\youtube-to-mp3\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Razer\\.nuget\\packages\\anglesharp\\1.0.4\\anglesharp.1.0.4.nupkg.sha512",
     "C:\\Users\\Razer\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
